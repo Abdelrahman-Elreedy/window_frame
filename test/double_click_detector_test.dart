@@ -1,5 +1,3 @@
-import 'dart:ui' show Offset;
-
 import 'package:flutter_test/flutter_test.dart';
 import 'package:window_frame/src/presentation/view_models/double_click_detector.dart';
 

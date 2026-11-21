@@ -196,24 +196,23 @@ class _WindowFrameScopeState extends State<WindowFrameScope> {
         isBlocked: _areShortcutsBlocked,
         child: HeroControllerScope.none(
           child: Navigator(
-            onGenerateRoute: (RouteSettings settings) =>
-                PageRouteBuilder<void>(
-                  settings: settings,
-                  transitionDuration: Duration.zero,
-                  reverseTransitionDuration: Duration.zero,
-                  pageBuilder:
-                      (
-                        BuildContext context,
-                        Animation<double> animation,
-                        Animation<double> secondaryAnimation,
-                      ) => WindowFrameScopeShell(
-                        contentListenable: _scopeContent,
-                        applicationHeroController: applicationHeroController,
-                        onInnerContextAvailable: (BuildContext innerContext) {
-                          _contextInsideNavigator = innerContext;
-                        },
-                      ),
-                ),
+            onGenerateRoute: (RouteSettings settings) => PageRouteBuilder<void>(
+              settings: settings,
+              transitionDuration: Duration.zero,
+              reverseTransitionDuration: Duration.zero,
+              pageBuilder:
+                  (
+                    BuildContext context,
+                    Animation<double> animation,
+                    Animation<double> secondaryAnimation,
+                  ) => WindowFrameScopeShell(
+                    contentListenable: _scopeContent,
+                    applicationHeroController: applicationHeroController,
+                    onInnerContextAvailable: (BuildContext innerContext) {
+                      _contextInsideNavigator = innerContext;
+                    },
+                  ),
+            ),
           ),
         ),
       ),

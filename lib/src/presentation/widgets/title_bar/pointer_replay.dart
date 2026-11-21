@@ -1,5 +1,3 @@
-import 'dart:ui' show Offset;
-
 import 'package:flutter/gestures.dart';
 
 /// Sends a complete left click (press + release) at [position], as if the user

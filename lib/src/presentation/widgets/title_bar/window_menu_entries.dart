@@ -28,7 +28,10 @@ List<WindowMenuEntry> _buildSystemEntries(WindowMenuViewModel viewModel) {
       label: 'Restore',
       mnemonic: 'R',
       iconBuilder: (BuildContext context, Color color) =>
-          WindowCaptionGlyphIcon(glyph: WindowCaptionGlyph.restore, color: color),
+          WindowCaptionGlyphIcon(
+            glyph: WindowCaptionGlyph.restore,
+            color: color,
+          ),
       isEnabled: isMaximized,
       onPressed: viewModel.restore,
     ),

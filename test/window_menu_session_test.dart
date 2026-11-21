@@ -1,6 +1,7 @@
 import 'dart:ui' show Offset, Rect;
 
-import 'package:flutter/gestures.dart' show kPrimaryButton, kSecondaryMouseButton;
+import 'package:flutter/gestures.dart'
+    show kPrimaryButton, kSecondaryMouseButton;
 import 'package:flutter_test/flutter_test.dart';
 import 'package:window_frame/src/presentation/view_models/window_menu_session.dart';
 

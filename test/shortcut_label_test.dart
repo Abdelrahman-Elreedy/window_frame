@@ -60,18 +60,14 @@ void main() {
 
     test('keeps the label of a function key', () {
       expect(
-        describeShortcutActivator(
-          const SingleActivator(LogicalKeyboardKey.f5),
-        ),
+        describeShortcutActivator(const SingleActivator(LogicalKeyboardKey.f5)),
         'F5',
       );
     });
 
     test('describes a character activator', () {
       expect(
-        describeShortcutActivator(
-          const CharacterActivator('?', control: true),
-        ),
+        describeShortcutActivator(const CharacterActivator('?', control: true)),
         'Ctrl+?',
       );
     });
@@ -91,7 +87,10 @@ void main() {
       final WindowMenuItem item = WindowMenuItem(
         label: 'Settings',
         onPressed: () {},
-        activator: const SingleActivator(LogicalKeyboardKey.comma, control: true),
+        activator: const SingleActivator(
+          LogicalKeyboardKey.comma,
+          control: true,
+        ),
       );
 
       expect(item.shortcutLabel, 'Ctrl+,');
@@ -102,7 +101,10 @@ void main() {
         label: 'Settings',
         onPressed: () {},
         shortcut: 'Ctrl + comma',
-        activator: const SingleActivator(LogicalKeyboardKey.comma, control: true),
+        activator: const SingleActivator(
+          LogicalKeyboardKey.comma,
+          control: true,
+        ),
       );
 
       expect(item.shortcutLabel, 'Ctrl + comma');
