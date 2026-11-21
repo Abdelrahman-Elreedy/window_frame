@@ -10,6 +10,16 @@ topics:
   - window
   - frameless
 
+screenshots:
+  - description: 'Custom title bar with tabs, search box and caption buttons (light theme).'
+    path: doc/images/hero-light.png
+  - description: 'The same title bar in the dark theme.'
+    path: doc/images/hero-dark.png
+  - description: 'A left-click on a widget while a window menu is open reaches the widget.'
+    path: doc/images/menu-click-through.gif
+  - description: 'Ctrl+, runs a menu entry from anywhere in the app.'
+    path: doc/images/menu-shortcut.gif
+
 environment:
   sdk: ^3.11.5
 
