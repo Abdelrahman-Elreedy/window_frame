@@ -1,0 +1,36 @@
+name: window_frame
+description: "Custom title bar and window frame for Flutter Windows desktop apps: your own widgets, native resize and snap, window menus, safe closing."
+version: 0.0.1
+repository: https://github.com/Abdelrahman-Elreedy/window_frame
+issue_tracker: https://github.com/Abdelrahman-Elreedy/window_frame/issues
+topics:
+  - windows
+  - desktop
+  - title-bar
+  - window
+  - frameless
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  # This section identifies this Flutter project as a plugin project.
+  # The 'pluginClass' specifies the class which should be registered in the
+  # plugin registry. This is required for using method channels.
+  plugin:
+    platforms:
+      windows:
+        pluginClass: WindowFramePluginCApi
